@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Project is Building..!!'
+            }
+        }
+        stage('Test'){
+            steps{
+                echo 'Build success..!!'
+                echo 'Testing project..!!'
+            }
+        }
+        stage('Deploy'){
+            steps{
+                echo 'Testing Success..!!'
+                echo 'Deploying Project..!!'
+            }
+        }
+        stage('Release'){
+            steps{
+                echo 'Deployment done successfully..!!'
+                echo 'Release in progress..'
+                echo 'Projecct Released Successfully.. Ready to Access..!!'
+            }
+        }
+    }
+}
